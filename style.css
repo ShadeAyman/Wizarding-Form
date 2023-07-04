@@ -1,0 +1,67 @@
+/* :root
+{
+  --main-color=;
+} */
+*
+{
+  box-sizing: border-box;
+}
+.container
+{
+  display: flex;
+  height: 100vh;
+  font-size: 2vw;
+}
+.hero-side,.form-side
+{
+  width: 50vw;
+  height: 100%;
+}
+.hero-side
+{
+  background-image: url(./imgs/hd_gryffindor_traits_phone_wallpaper_by_emily_corene_d7yll4v.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.form-side
+{
+  background-color: #CB3429;
+  height: 100%;
+}
+form
+{
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+label
+{
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+}
+button[type="submit"]
+{
+  width: 30vw;
+  padding: 20px;
+}
+input
+{
+  height: 5vh;
+  width: 30vw;
+  border-radius: 4px;
+  border-color: transparent;
+  margin: 1px;
+}
+.houses
+{
+  margin:20px ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
