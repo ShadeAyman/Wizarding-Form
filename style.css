@@ -1,85 +1,124 @@
-/* :root
+:root
 {
-  --main-color=;
-} */
-*
-{
-  box-sizing: border-box;
+  --secondry:#D92B3A;
+  --main:#D97F30;
+  --main2:#80351a;
+  --hero-side:url(./imgs/hd_gryffindor_traits_phone_wallpaper_by_emily_corene_d7yll4v.jpg);
+  /* --border:#59150F;
+  --main-background:#0D0D0D; */
 }
-.container
+/* .gryffindor
 {
+  --main-color:red;
+  --secondry-color:black;
+}
+.ravinclaw
+{
+  --main-color:blue;
+  --secondry-color:black;
+} */
+@font-face {
+  font-family: magic;
+  src: url(./fonts/legendary-runes-font/LegendaryRunesFreeTrial-8M22Z.otf);
+}
+* {
+  box-sizing: border-box;
+  font-family: magic,Impact, 'Arial Narrow Bold', sans-serif;
+}
+
+
+.container {
   display: flex;
   height: 100vh;
 }
-.hero-side
-{
-  background-image: url(./imgs/hd_gryffindor_traits_phone_wallpaper_by_emily_corene_d7yll4v.jpg);
+
+.hero-side {
+  background-image:var(--hero-side);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   width: 40vw;
 }
-.form-side
-{
-  background-color: ghostwhite;
+
+.form-side {
   width: 60vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  border:solid;
   flex-direction: column;
   height: 100vh;
+  background-color: var(--main2);
 }
-form
-{
+
+form {
   display: flex;
   flex-direction: column;
-  border-top: dashed;
-  border-bottom: dashed;
   width: 100%;
   padding: 40px;
   height: 60%;
+  background-color: var(--main);
+  color: var(--main2);
 }
 .full-name,
 .email-Number,
 .pwd-container,
-.houses
-{
+.houses {
+  padding:10px;
   display: flex;
-  justify-content: space-around;
   align-items: center;
   width: 100%;
   height: 25%;
   gap: 20px;
-  margin: 5px;
-  font-size: 1.5em;
+  margin: 1vh;
+  font-size: calc(2vw + 1vh );
 }
-.houses
-{
+
+.houses {
   justify-content: space-between;
-  
+
 }
-.houses button
-{
+
+.houses button {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1vw;
   border-radius: 10px;
   width: 25%;
-  height: 100%;
+  height: 8vh;
   margin-top: 20px;
+  margin-bottom: 10px;
 }
-input{
+
+input {
   width: 100%;
+  border-radius: 10px;
+  border-width: 0px;
+  background-color: var(--main2);
+  color: var(--main); 
 }
-label
-{
+
+label {
   width: 50%;
+
 }
-.submit
+
+label>div {
+  height: 40%;
+}
+
+
+
+.quote
 {
-  margin-top: 40px;
-  width: 30vw;
-  height: 10vh;
+  padding: 40px;
+  color: var(--main);
+  font-size: calc(2vw + 1vh );
+}
+.footer
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
 }
