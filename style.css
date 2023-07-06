@@ -1,12 +1,12 @@
-:root
-{
-  --secondry:#D92B3A;
-  --main:#D97F30;
-  --main2:#80351a;
-  --hero-side:url(./imgs/hd_gryffindor_traits_phone_wallpaper_by_emily_corene_d7yll4v.jpg);
+:root {
+  --secondry: #D92B3A;
+  --main: #D97F30;
+  --main2: #80351a;
+  --hero-side: url(./imgs/hd_gryffindor_traits_phone_wallpaper_by_emily_corene_d7yll4v.jpg);
   /* --border:#59150F;
   --main-background:#0D0D0D; */
 }
+
 /* .gryffindor
 {
   --main-color:red;
@@ -21,33 +21,47 @@
   font-family: magic;
   src: url(./fonts/legendary-runes-font/LegendaryRunesFreeTrial-8M22Z.otf);
 }
+
 * {
   box-sizing: border-box;
-  font-family: magic,Impact, 'Arial Narrow Bold', sans-serif;
+  font-family: magic, Impact, 'Arial Narrow Bold', sans-serif;
 }
 
 
 .container {
   display: flex;
   height: 100vh;
+  width: 100vw;
 }
 
 .hero-side {
-  background-image:var(--hero-side);
+  background-image: var(--hero-side);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   width: 40vw;
+  height: inherit;
 }
 
 .form-side {
   width: 60vw;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
+  height: inherit;
   background-color: var(--main2);
+}
+
+.quote {
+  display: flex;
+  align-items: center;
+  height: 25%;
+  padding: 40px;
+  text-align: center;
+  color: var(--main);
+  font-size: calc(1.5vw + 1.5vw);
 }
 
 form {
@@ -55,70 +69,100 @@ form {
   flex-direction: column;
   width: 100%;
   padding: 40px;
-  height: 60%;
+  height: 55%;
   background-color: var(--main);
   color: var(--main2);
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  height: 20%;
+  width: 100%;
+}
+
+.footer button {
+  border-color: var(--secondry);
+  /* border: none; */
+  border-width: 6px;
+  margin: 20px;
+  width: 20vw;
+  height: 8vh;
+  background-color: var(--main);
+  color: var(--main2);
+  border-radius: 10px;
+}
+.footer button:hover{
+  background-color: var(--secondry);
+  color: var(--main);
+  border-color: var(--main);
+}
+
+.footer p
+{
+  margin-top: -10px;
+  margin-left: 20px;
+ color: var(--main);
+}
+a
+{
+  color: var(--main);
+  font-size: 1.5em;
+}
+a:hover
+{
+  color: var(--secondry);
 }
 .full-name,
 .email-Number,
 .pwd-container,
 .houses {
-  padding:10px;
   display: flex;
   align-items: center;
   width: 100%;
   height: 25%;
   gap: 20px;
   margin: 1vh;
-  font-size: calc(2vw + 1vh );
+  font-size: calc(2vw + 1vh);
 }
 
 .houses {
   justify-content: space-between;
-
+  /* flex-wrap: wrap; */
+  /* border: solid; */
 }
 
 .houses button {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 10px;
-  width: 25%;
-  height: 8vh;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  background-color: transparent;
+  border: none;
+
+}
+
+.houses button,
+button img {
+  width: 12.5vh;
+  height: 12.5vh;
 }
 
 input {
   width: 100%;
   border-radius: 10px;
-  border-width: 0px;
+  border-color: var(--secondry);
   background-color: var(--main2);
-  color: var(--main); 
+  color: var(--main);
+  padding: 1.5vh;
+
 }
 
 label {
   width: 50%;
+  font-size: calc(1vw + 1vh);
 
 }
 
 label>div {
   height: 40%;
-}
-
-
-
-.quote
-{
-  padding: 40px;
-  color: var(--main);
-  font-size: calc(2vw + 1vh );
-}
-.footer
-{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 40px;
 }
