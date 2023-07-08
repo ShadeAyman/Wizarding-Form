@@ -6,16 +6,39 @@
   --quote: "You might belong in Gryffindor,Where dwell the brave at heart,Their daring, nerve, and chivalry,Set Gryffindors apart.";
 }
 
-/* .gryffindor
-{
-  --main-color:red;
-  --secondry-color:black;
+.gryffindor {
+  --secondry: #CB3929;
+  --main: #FAA63D;
+  --main2: #80351a;
+  --hero-side: url(./imgs/hd_gryffindor_traits_phone_wallpaper_by_emily_corene_d7yll4v.jpg);
+  --quote: "You might belong in Gryffindor,Where dwell the brave at heart,Their daring, nerve, and chivalry,Set Gryffindors apart.";
 }
-.ravinclaw
+
+.Hufflepuff {
+  --secondry: #23241F;
+  --main: #F2CC0F;
+  --main2: #402D09;
+  --hero-side: url(./imgs/hd_hufflepuff_traits_phone_wallpaper_by_emily_corene_d7ylkg1.jpg);
+  --quote: "You might belong in Hufflepuff,Where they are just and loyal,Those patient Hufflepuffs are true,And unafraid of toil.";
+}
+
+.ravinclaw {
+  --secondry: #0D0D0D;
+  --main: #049DBF;
+  --main2: #075466;
+  --hero-side: url(./imgs/hd_ravenclaw_phone_wallpaper_by_emily_corene_d7ylkth.jpg);
+  --quote: "Or yet in wise old Ravenclaw,If you've a ready mind,Where those of wit and learning,Will always find their kind.";
+}
+
+.Slytherin
 {
-  --main-color:blue;
-  --secondry-color:black;
-} */
+  --secondry: silver;
+  --main: #31A62D;
+  --main2: #0E400D;
+  --hero-side: url(./imgs/hd_slytherin_traits_phone_wallpaper_by_emily_corene_d7yljq6.jpg);
+  --quote: "Or perhaps in Slytherin,You'll make your real friends,These cunning folks use any means To achieve their ends.";
+}
+
 @font-face {
   font-family: magic;
   src: url(./fonts/HarryP.ttf);
@@ -64,8 +87,8 @@
   color: var(--main);
   font-size: calc(1.5vw + 1.5vw);
 }
-.quote::after
-{
+
+.quote::after {
   content: var(--quote);
 }
 
@@ -158,18 +181,20 @@ a:hover {
   border: none;
   width: 2em;
   height: 2em;
-}
-.houses button:hover
-{
-  transform: scale(1.2);
-  transition: 0.8s;
-}
-.houses button:active
-{
-  transform: scale(0.8);
+  transition: 0.5s;
 
-  transition: 0.2s;
+
 }
+
+.houses button:hover {
+  transform: scale(1.2);
+}
+
+.houses button:active {
+  transform: scale(0.8);
+  transition: 0.1s;
+}
+
 input {
   width: 100%;
   border-radius: 10px;
