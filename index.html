@@ -28,6 +28,7 @@ Checking that the password fields match each other requires javascript. Try to i
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <link rel="icon" href="./imgs/DeathlyHallows.png" type="png">
     <title>Wizarding From</title>
 </head>
 
@@ -37,35 +38,35 @@ Checking that the password fields match each other requires javascript. Try to i
         </div>
         <div class="form-side">
             <div class="quote"></div>
-            <form action="filler">
+            <form id="theForm" action="#">
                 <div class="full-name">
                     <label for="First-name">
                         <div>First Name</div>
-                        <input type="text" name="First-name" id="First-name">
+                        <input type="text" name="First-name" id="First-name" pattern="[a-zA-Z0-9-]+" required>
                     </label>
                     <label for="Last-Name">
                         <div>Last Name </div>
-                        <input type="text" name="Last-Name" id="Last-Name">
+                        <input type="text" name="Last-Name" id="Last-Name" >
                     </label>
                 </div>
-                <div class="email-Number">
+                <div class="email-Number" >
                     <label for="Email">
                         <div>Email </div>
                         <input type="email">
                     </label>
                     <label for="Number">
                         <div>Wand Number</div>
-                        <input type="tel" name="Number" id="Number">
+                        <input type="tel" name="Number" id="Number" required>
                     </label>
                 </div>
                 <div class="pwd-container">
                     <label for="password">
                         <div>Password </div>
-                        <input type="password" name="password" id="password">
+                        <input type="password" name="password" id="password" required>
                     </label>
                     <label for="con-password">
                         <div>Confirm Password </div>
-                        <input type="password" name="con-password" id="con-password">
+                        <input type="password" name="con-password" id="con-password"required>
                     </label>
                 </div>
                 <div class="houses">
@@ -84,8 +85,8 @@ Checking that the password fields match each other requires javascript. Try to i
                 </div>
             </form>
             <div class="footer">
-                <button class="button" type="submit">sign up</button>
-                <p>already a wizzard ? <a href="#">login</a></p>
+                <button class="button" form="theForm" type="submit">sign up</button>
+                <p>already a wizzard ? <a href="">login</a></p>
             </div>
         </div>
     </dev>
