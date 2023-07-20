@@ -1,4 +1,5 @@
 :root {
+
   --secondry: #CB3929;
   --main: #FAA63D;
   --main2: #80351a;
@@ -30,8 +31,7 @@
   --quote: "Or yet in wise old Ravenclaw,If you've a ready mind,Where those of wit and learning,Will always find their kind.";
 }
 
-.Slytherin
-{
+.Slytherin {
   --secondry: silver;
   --main: #31A62D;
   --main2: #0E400D;
@@ -47,13 +47,15 @@
 * {
   box-sizing: border-box;
   font-family: magic, Impact, 'Arial Narrow Bold', sans-serif;
+  transition-duration: 0.7s;
 }
 
 
-.container {
+#container {
   display: flex;
   height: 100vh;
   width: 100vw;
+
 }
 
 .hero-side {
@@ -181,7 +183,7 @@ a:hover {
   border: none;
   width: 2em;
   height: 2em;
-  transition: 0.5s;
+  transition: 0.1s;
 
 
 }
@@ -213,28 +215,28 @@ label>div {
   height: 40%;
 }
 
-.Gryffindor,
-.Hufflepuff,
-.Ravenclaw,
-.Slytherin {
+#GryffindorButton,
+#HufflepuffButton,
+#RavenclawButton,
+#SlytherinButton {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 }
 
-.Gryffindor {
+#GryffindorButton {
   background-image: url(./imgs/gryffindor_house_stamp_by_crystallynnblud_d4iijzk.png);
 
 }
 
-.Hufflepuff {
+#HufflepuffButton {
   background-image: url(./imgs/hufflepuff_house_stamp_by_crystallynnblud_d4iijz1.png);
 }
 
-.Ravenclaw {
+#RavenclawButton {
   background-image: url(./imgs/ravenclaw_house_stamp_by_crystallynnblud_d4iijzd.png);
 }
 
-.Slytherin {
+#SlytherinButton {
   background-image: url(./imgs/slytherin_house_stamp_by_crystallynnblud_d4iijyj.png);
 }

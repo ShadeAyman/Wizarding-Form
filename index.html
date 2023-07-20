@@ -27,12 +27,12 @@ Checking that the password fields match each other requires javascript. Try to i
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <title>Wizarding From</title>
 </head>
 
 <body>
-    <dev class="container">
+    <dev id="container" class="gryffindor">
         <div class="hero-side">
         </div>
         <div class="form-side">
@@ -69,16 +69,16 @@ Checking that the password fields match each other requires javascript. Try to i
                     </label>
                 </div>
                 <div class="houses">
-                    <button class="Gryffindor" type="button">
+                    <button id="GryffindorButton" type="button">
 
                     </button>
-                    <button class="Hufflepuff" type="button">
+                    <button id="HufflepuffButton" type="button">
 
                     </button>
-                    <button class="Ravenclaw" type="button">
+                    <button id="RavenclawButton" type="button">
 
                     </button>
-                    <button class="Slytherin" type="button">
+                    <button id="SlytherinButton" type="button">
 
                     </button>
                 </div>
