@@ -241,9 +241,9 @@ label>div {
   background-image: url(./imgs/slytherin_house_stamp_by_crystallynnblud_d4iijyj.png);
 }
 
-input:invalid {
+/* input:invalid {
   background-color: red;
-}
+} */
 
 @media screen and (max-width: 600px) {
   label {
@@ -253,37 +253,36 @@ input:invalid {
     padding: 10px;
 
   }
-  .quote
-  {
+
+  .quote {
     box-sizing: border-box;
     background-color: var(--main2);
     margin: 50px;
     border-radius: 20px;
   }
+
   .hero-side {
     display: none;
-  
+
   }
-  
+
   .form-side {
     width: 100vw;
     background-image: var(--hero-side);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-  
+
   }
-  
+
   #theForm {
     background-color: transparent;
     gap: 20px;
-  
+
   }
-  
+
   .footer {
     justify-content: center;
     align-items: center;
   }
-  }
-
-
+}
