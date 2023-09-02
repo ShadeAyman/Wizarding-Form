@@ -280,8 +280,16 @@ label>div {
   }
 }
 
-.error::after {
+.error{
+  padding-left: 4px;
   color: red;
-  content: "passwords are not matching";
-  background-color: red;
+  font-size: 10px;
+}
+::placeholder
+{
+  color: var(--main);
+}
+.hidden
+{
+  display: none !important;
 }
