@@ -80,7 +80,7 @@ body {
   padding: 40px;
   text-align: center;
   color: var(--main);
-  font-size: calc(1.5vw + 1.5vw);
+  font-size: calc(1.5vw + 1.0rem);
 }
 
 .quote::after {
@@ -182,11 +182,9 @@ a:hover {
   align-items: center;
   background-color: transparent;
   border: none;
-  width: 2em;
+  width: 1em;
   height: 2em;
   transition: 0.1s;
-
-
 }
 
 .houses button:hover {
@@ -209,7 +207,7 @@ input {
 
 label {
   width: 50%;
-  font-size: calc(1vw + 1vh);
+  font-size: calc(1vw + 0.5rem);
 }
 
 label>div {
